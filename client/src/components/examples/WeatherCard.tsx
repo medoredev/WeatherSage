@@ -1,7 +1,6 @@
 import WeatherCard from '../WeatherCard';
 
 export default function WeatherCardExample() {
-  //todo: remove mock functionality
   const mockWeatherData = {
     condition: 'sunny' as const,
     temperature: 24,

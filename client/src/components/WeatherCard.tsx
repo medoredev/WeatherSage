@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { RefreshCw, MapPin } from 'lucide-react';
-import WeatherIcon from './WeatherIcon';
-import TemperatureDisplay from './TemperatureDisplay';
-import TimePeriodIndicator from './TimePeriodIndicator';
+import WeatherIcon from '@/components/WeatherIcon';
+import TemperatureDisplay from '@/components/TemperatureDisplay';
+import TimePeriodIndicator from '@/components/TimePeriodIndicator';
 
 export interface WeatherData {
   condition: 'sunny' | 'rainy';

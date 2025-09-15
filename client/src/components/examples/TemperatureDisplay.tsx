@@ -20,24 +20,24 @@ export default function TemperatureDisplayExample() {
             <h3 className="text-lg font-semibold">Temperature Ranges (Color Coding)</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               <div className="text-center space-y-2">
-                <TemperatureDisplay temperature={-5} size="medium" />
-                <span className="text-sm text-muted-foreground">Freezing</span>
+                <TemperatureDisplay temperature={22} size="medium" />
+                <span className="text-sm text-muted-foreground">Cool</span>
               </div>
               <div className="text-center space-y-2">
-                <TemperatureDisplay temperature={5} size="medium" />
-                <span className="text-sm text-muted-foreground">Cold</span>
+                <TemperatureDisplay temperature={26} size="medium" />
+                <span className="text-sm text-muted-foreground">Comfortable</span>
               </div>
               <div className="text-center space-y-2">
-                <TemperatureDisplay temperature={18} size="medium" />
-                <span className="text-sm text-muted-foreground">Mild</span>
-              </div>
-              <div className="text-center space-y-2">
-                <TemperatureDisplay temperature={28} size="medium" />
+                <TemperatureDisplay temperature={30} size="medium" />
                 <span className="text-sm text-muted-foreground">Warm</span>
               </div>
               <div className="text-center space-y-2">
-                <TemperatureDisplay temperature={35} size="medium" />
+                <TemperatureDisplay temperature={34} size="medium" />
                 <span className="text-sm text-muted-foreground">Hot</span>
+              </div>
+              <div className="text-center space-y-2">
+                <TemperatureDisplay temperature={38} size="medium" />
+                <span className="text-sm text-muted-foreground">Very Hot</span>
               </div>
             </div>
           </div>
