@@ -66,7 +66,6 @@ export default function WeatherIcon({
       />
       {animated && (
         <>
-          {/* Rain drops animation */}
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
             <div className="flex space-x-1">
               {[...Array(3)].map((_, i) => (

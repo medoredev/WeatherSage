@@ -47,10 +47,8 @@ export default function WeatherCard({ data, isLoading = false, onRefresh }: Weat
 
   return (
     <Card className="w-full max-w-md mx-auto p-8 text-center relative overflow-hidden">
-      {/* Background gradient based on time period */}
       <TimePeriodIndicator className="absolute inset-0 opacity-10 -z-10" />
       
-      {/* Header with location and refresh */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2 text-muted-foreground">
           <MapPin className="w-4 h-4" />
@@ -68,12 +66,10 @@ export default function WeatherCard({ data, isLoading = false, onRefresh }: Weat
         </Button>
       </div>
 
-      {/* Main weather display */}
       <div className="space-y-6">
         <WeatherIcon condition={data.condition} size="large" />
         <TemperatureDisplay temperature={data.temperature} />
         
-        {/* Current time */}
         <div className="space-y-2">
           <div className="text-3xl font-bold text-foreground" data-testid="text-current-time">
             {formatTime(currentTime)}
@@ -81,7 +77,6 @@ export default function WeatherCard({ data, isLoading = false, onRefresh }: Weat
           <TimePeriodIndicator showLabel={true} />
         </div>
 
-        {/* Weather condition */}
         <div className="space-y-1">
           <div 
             className={`text-xl font-semibold ${

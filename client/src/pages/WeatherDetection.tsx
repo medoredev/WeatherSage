@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import WeatherCard from '@/components/WeatherCard';
-import ThemeToggle from '@/components/ThemeToggle';
 import { WeatherData } from '@/components/WeatherCard';
 
 export default function WeatherDetection() {
@@ -61,16 +60,13 @@ export default function WeatherDetection() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
-      {/* Header */}
       <header className="flex items-center justify-between p-6">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Weather Detective</h1>
           <p className="text-sm text-muted-foreground">Real-time weather & time detection</p>
         </div>
-        <ThemeToggle />
       </header>
 
-      {/* Main Content */}
       <main className="flex items-center justify-center px-6 pb-12">
         <WeatherCard 
           data={weatherData}
